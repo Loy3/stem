@@ -1,4 +1,43 @@
 .navBar {
     padding: 10px 50px;
-    
+
 }
+
+.ul {
+    list-style: circle;
+}
+
+.body {
+    background-color: cornsilk;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.side-images {
+    width: 20%;
+    float: right;
+}
+
+.main-div {
+    margin-left: 10%;
+    display: block;
+    width: 90%;
+    text-align: justify;
+}
+.table{
+    width: 90;
+    margin-left: 0%;
+    margin-right: 10%;
+}
+
+/* .sub-div-left {
+    display: contents;
+    float: left;
+    width: 30%;
+    padding-left: 0%;
+} */
+
+/* .sub-div-right {
+    display: contents;
+    float: right;
+    width: 40%;
+} */
