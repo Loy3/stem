@@ -1,4 +1,83 @@
 .navBar {
     padding: 10px 50px;
+
+}
+
+.navBar a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.ul {
+    list-style: circle;
+}
+
+.body {
+    background-color: cornsilk;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.side-images {
+    width: 20%;
+    float: right;
+}
+
+.main-div {
+    margin-left: 10%;
+    display: block;
+    width: 90%;
+    text-align: justify;
+}
+.table{
+    width: 90;
+    margin-left: 0%;
+    margin-right: 10%;
+}
+
+.typo3{
+    position: relative;
+    left: 30px;
+}
+footer{
+    position: relative;
+    top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 10px -10px 5px black
+}
+
+.right{
+    top: 10px;
+    position: relative;
+    left: 350px;
+}
+
+.team{
+    display: flex;
+    flex-direction: row;
     
 }
+
+.contact{
+    position: relative;
+    left: 120vh;
+}
+
+/* .sub-div-left {
+    display: contents;
+    float: left;
+    width: 30%;
+    padding-left: 0%;
+} */
+
+/* .sub-div-right {
+    display: contents;
+    float: right;
+    width: 40%;
+} */
