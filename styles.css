@@ -1,22 +1,117 @@
+html,
+body {
+    margin: 0;
+    background-color: #f2f6ff;
+}
+
 .navBar {
     padding: 10px 50px;
+    position: fixed;
+    background-color: #f0f5ff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    top: 0;
 
+    z-index: 99;
+}
+.logoTD{
+    width: 50%;
 }
 
-.navBar a{
-    color: black;
+.navBar a {
     text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
 }
 
-a:hover{
-    text-decoration: underline;
+.navBar a.active {
+    border-bottom: 2px solid #0438b170;
 }
+
 .ul {
     list-style: circle;
 }
 
+/*Header*/
+
+
+header {
+    background-image: url("./assets/math.jpg");
+    background-size: cover;
+    height: 65vh;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 80px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 10px 20px #0438b14b;
+
+}
+
+.bgText {
+    position: absolute;
+    color: white;
+    padding-bottom: 80px;
+}
+
+
+.bgBlock {
+    width: 100%;
+    padding: 40px;
+    background-color: #162955;
+    opacity: 0.7;
+
+    text-align: center;
+    height: 90%;
+}
+
+
+
+
+header p {
+    font-weight: bolder;
+    font-size: 30px;
+
+    padding: 0;
+    margin: 0;
+}
+
+header button {
+
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 160px;
+    height: 50px;
+    font-weight: bold;
+    background-color: #162955;
+    color: #f2f6ff;
+    border: 3px solid #162955;
+    box-shadow: 5px 10px 20px #f2f6ff50;
+}
+
+header button:hover {
+    background-color: #f2f6ff;
+    color: #162955;
+    border: 3px solid #162955;
+}
+
+header h2 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/*End of Header*/
+
 .body {
-    background-color: cornsilk;
+    background-color: #f2f6ff;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -26,47 +121,15 @@ a:hover{
 }
 
 .main-div {
-    margin-left: 10%;
-    display: block;
-    width: 90%;
-    text-align: justify;
+    
+   
+    padding: 20px;
 }
-.table{
-    width: 90;
+
+.table {
+    width: 90%;
     margin-left: 0%;
     margin-right: 10%;
-}
-
-.typo3{
-    position: relative;
-    left: 30px;
-}
-footer{
-    position: relative;
-    top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: white;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 5px 10px -10px 5px black
-}
-
-.right{
-    top: 10px;
-    position: relative;
-    left: 350px;
-}
-
-.team{
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.contact{
-    position: relative;
-    left: 120vh;
 }
 
 /* .sub-div-left {
@@ -81,3 +144,170 @@ footer{
     float: right;
     width: 40%;
 } */
+
+
+#toAbout,
+#toWhy,
+#toSolutions,
+#toStats {
+    padding: 90px;
+}
+
+
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+iframe {
+    box-shadow: 5px 10px 20px #02020271;
+}
+
+#stats {
+    margin-left: 30px;
+}
+
+#stats .column {
+    width: 100%;
+    padding-left: 30px;
+}
+
+#toStats img {
+    width: 80%;
+}
+
+h1 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #0438b170;
+    width: 300px;
+}
+
+
+.table {
+    width: 90;
+    margin-left: 0%;
+    margin-right: 10%;
+}
+
+.typo3 {
+    position: relative;
+    left: 30px;
+}
+
+footer {
+    position: relative;
+    top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 10px -10px 5px black
+}
+
+footer .column {
+    width: 30%;
+}
+/*
+.right {
+    /* top: 10px;
+    position: relative;*
+    float: right;
+}*/
+
+/*
+.team{
+    display: flex;
+    flex-direction: row;
+    
+}
+*/
+.contact {
+    position: relative;
+    float: right;
+    /*eft: 120vh;*/
+}
+
+
+
+.bounce {
+
+    animation: bounce 5s infinite;
+
+}
+
+@keyframes bounce {
+    from {
+        transform: scale(0.8);
+
+    }
+
+    50% {
+        transform: scale(0.6);
+
+    }
+
+    to {
+        transform: scale(0.8);
+
+    }
+}
+
+/*Media*/
+@media screen and (max-width: 700px) {
+    .column, footer .column {
+        width: 100%;
+    }
+
+    #stats {
+        margin: 0;
+    }
+
+    #stats .column {
+        width: 41%;
+    }
+
+    #stats img {
+        width: 100%;
+    }
+
+    .contact {
+        
+        float:none;
+    }
+
+    .navBar a {
+       padding: 5px;
+        font-size: 12px;
+    }
+
+    .navBar {
+        padding: 10px 20px;
+    }
+    .logoTD{
+        width: 2%;
+    }
+
+    #toAbout,
+#toWhy,
+#toSolutions,
+#toStats {
+    padding: 30px;
+}
+
+}
+
+/*Media*/
